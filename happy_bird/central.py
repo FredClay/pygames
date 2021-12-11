@@ -12,7 +12,7 @@ def draw_window(level):
     WIN.blit(BG_IMAGE, (0, 0))
     level.run_level()
     score_text = SCORE_FONT.render(f"Score: {int(level.score)}", True, WHITE)
-    WIN.blit(score_text, (10, SCREEN_HEIGHT - 20))
+    WIN.blit(score_text, (10, SCREEN_HEIGHT - 40))
     pygame.display.update()
 
 
